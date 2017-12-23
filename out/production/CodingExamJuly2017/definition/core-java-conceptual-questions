@@ -1,0 +1,148 @@
+Please answer the below core-java Questions:
+What jdk contains or composed of and define each components?
+/////
+What is IDE?
+A:A Java IDE (Integrated Development Environment) is a software application
+which enables users to more easily write and debug Java programs.
+What are the IDEs available in the market to support java?
+A:NetBeans, Eclipse, IntelliJ IDEA Community Edition,BlueJ,jEdit,jGRASP,JSource and few more.
+Explain the entire java life cycle.
+A:We can use any text editor to create the high-level Java text file.
+This file is saved as a .java file on the disk. We then compile this text file using
+the Java compiler, which result in a .class file being created on the disk.
+The .class file contains the bytecodes. The file is then loaded into memory by
+the class loader. The bytecode verifier confirms that the bytecodes are valid and not hostile.
+Finally, the JVM reads the bytecodes in memory and translates them into machine code.
+what is class?
+Ans:A class is an blueprint/template of an object.
+What is object?
+Ans:Object is an instance of a class.
+What is the entry point of an application?
+A.main method.
+Why main is static?
+A:This is necessary because main() is called by the JVM before any objects are made.
+Since it is static it can be directly invoked via the class.
+What is the difference between an Interface and Abstract class?
+A:1.Main difference is methods of a Java interface are implicitly abstract and
+cannot have implementations. A Java abstract class can have instance methods that
+implements a default behavior. 2.Variables declared in a Java interface is by
+default final. An abstract class may contain non-final variables.
+Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+A:No, we have implements Interface and extends abstract class to use it.
+what is Access Specifier?
+A:An access specifiers determine how other parts of the program
+can access the members of the class such as public,private,protected and package.
+What is OOP ? Define each feature of java OOP.
+A:OOP stands for Object Oriented programming.Following are the features of OOP;
+Abstraction: Implementation hiding.
+Inheritance:is a mechanism in which one object acquires all the properties and behavior of
+parent class.
+Encapsulation:Process of data hiding
+Polymorphism:Ability of an object to take many forms like Method Overloading and Method overriding.
+What is API? Name list of API that you have used so far.
+A:Application Programming Interface.
+Does java support multiple inheritance?
+A:No.
+What is method overloading and when it happens?
+A:Method Overloading is a feature that allows a class to have two or more methods
+having same name, if their argument lists are different.It happens in compile time.
+Explain exceptions in java and how to handle it.
+A:An Exception can be anything which interrupts the normal flow of the program.
+Different exception handing are: try catch block,Finally block,try-catch-finally block,finally block and return
+statement, throw exceptions etc.
+What is static keyword in java? How it has been used in variables and methods ?
+A:Static variables are declared in a class but not in a method, also known as class
+variables. This type of variable is declared using the keyword static.
+Static variables are created when the program begins and destroyed when the program ends.
+Static methods in java belong to the class (not an instance of it). They use no
+instance variables and will usually take input from the parameters, perform actions on it, then return some result.
+What is final and how it has been used variables and methods?
+A:Final is a Keyword. Final is used to apply restrictions on class,
+method and variable. Final class can't be inherited, final method can't be
+overridden and final variable value can't be changed
+What is final, finally and finalize?
+A:Final is a Keyword. Final is used to apply restrictions on class, method and variable. Final class can't be inherited,
+final method can't be overridden and final variable value can't be changed.
+Finally is a block. Finally is used to place important code, it will be executed whether exception is handled or not.
+Finalize is a method. Finalize is used to perform clean up processing just before object is garbage collected.
+What is a constructor ?
+A:A constructor initializes an object when it is created. It has the name as its
+class and is syntactically similar to a method.
+However constructors have no explicit return type.
+What is "this" keyword in java ?
+A:When a method is called, it is automatically passed an implicit argument that is a reference to the invoking object.
+This reference is called this.
+What is "super" keyword in java?
+A:The super keyword in java is a reference variable which is used to refer immediate parent class object.
+Whenever you create the instance of subclass, an instance of parent class is created implicitly which is referred by super reference variable.
+1.super can be used to refer immediate parent class instance variable.
+2.super can be used to invoke immediate parent class method.
+3.super() can be used to invoke immediate parent class constructor.
+What is JVM stand for ?
+A:Java Virtual Machine
+What version of java are you using?
+A:JDK 8u144
+What is JAR stand for ?
+A:Java Archive
+What is compile time and run time?
+A:The source code must be compiled into machine code in order to become and executable
+program. This compilation process is referred to as compile time.
+A compiled program can be opened and run by a user.
+When an application is running, it is called runtime.
+What is heap?
+A.The heap is the runtime data area from which memory for all class instances and arrays is allocated.
+How java manage it's memory?
+Ans:Java objects reside in an area called the heap.
+The heap is created when the JVM starts up and may increase
+or decrease in size while the application runs. When the heap becomes full,
+garbage is collected. During the garbage collection objects that are no longer
+used are cleared, thus making space for new objects.
+What is the difference between String, StringBuffer and StringBuilder?
+A:String is immutable  ( once created can not be changed )object.
+The object created as a String is stored in the  Constant String Pool  .
+Every immutable object in Java is thread safe ,that implies String is
+also thread safe . String can not be used by two threads simultaneously.
+String  once assigned can not be changed.
+StringBuffer is mutable means one can change the value of the object . The object created
+through StringBuffer is stored in the heap . StringBuffer  has the same methods as the StringBuilder ,
+but each method in StringBuffer is synchronized that is StringBuffer is thread safe .
+StringBuilder  is same as the StringBuffer , that is it stores the object in heap and
+it can also be modified . The main difference between the StringBuffer and
+StringBuilder is that StringBuilder is also not thread safe.
+StringBuilder is fast as it is not thread safe .
+What is Singleton class?
+A:In object-oriented programming, a singleton class is a class that can have
+only one object (an instance of the class) at a time. ... To design a singleton class: Make constructor as private.
+Write a static method that has return type object of this singleton class.
+What is Serialization and Deserialization?
+A:Serialization is a process of converting an object into a sequence of bytes which
+can be persisted to a disk or database or can be sent through streams.
+The reverse process of creating object from sequence of bytes is called deserialization.
+Which one will take more memory, an int or Integer?
+A:Integer.
+Why is String Immutable in Java?
+A:The string is Immutable in Java because String objects are cached in String pool.
+Since cached String literals are shared between multiple clients there is always a risk,
+where one client's action would affect all another client.
+What is constructor chaining in Java?
+A:Calling one constructor from other is called Constructor chaining in Java. Constructors
+can call each other automatically or explicitly using this() and super() keywords. this() denotes a no-argument constructor
+of the same class and super() denotes a no argument or default constructor of parent class.
+The difference between Serial and Parallel Garbage Collector?
+What is JIT stands for?
+A: just in time
+Explain Java Heap space and Garbage collection?
+A:Java objects reside in an area called the heap.
+The heap is created when the JVM starts up and may increase
+or decrease in size while the application runs. When the heap becomes full,
+garbage is collected. During the garbage collection objects that are no longer
+used are cleared, thus making space for new objects.
+Can you guarantee the garbage collection process?
+A.Yes.
+What is the difference between stack and heap in Java?
+A:The main difference between heap and stack is that stack memory
+is used to store local variables and function call while heap memory is used
+to store objects in Java.
+
+
+
